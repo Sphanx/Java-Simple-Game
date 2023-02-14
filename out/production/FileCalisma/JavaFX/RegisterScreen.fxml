@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.RegisterScreen">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../images/Clouds/Clouds%201/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Clouds/Clouds%201/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Clouds/Clouds%201/4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="322.0" fitWidth="350.0" layoutX="460.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="0.9">
+         <image>
+            <Image url="@../images/PNG/panel_beige.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userNameTF" layoutX="610.0" layoutY="290.0" prefHeight="26.0" prefWidth="175.0" promptText="kullanıcı adı" />
+      <TextField fx:id="passwordTF" layoutX="610.0" layoutY="340.0" prefHeight="26.0" prefWidth="175.0" promptText="şifre" />
+      <TextField fx:id="playerNameTF" layoutX="610.0" layoutY="390.0" prefHeight="26.0" prefWidth="175.0" promptText="karakter adı" />
+      <Label layoutX="458.0" layoutY="290.0" prefHeight="30.0" prefWidth="150.0" text="Kullanıcı adı:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="340.0" prefHeight="35.0" prefWidth="144.0" text="Şifre:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="390.0" prefHeight="35.0" prefWidth="144.0" text="Karakter adı:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="621.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" scaleX="1.1" scaleY="1.7">
+         <image>
+            <Image url="@../images/PNG/buttonLong_beige_pressed.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="625.0" layoutY="463.0" prefHeight="50.0" prefWidth="150.0" text="Kayıt Yap" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="616.0" layoutY="459.0" mnemonicParsing="false" onAction="#register" opacity="0.0" prefHeight="58.0" prefWidth="169.0" text="Kayıt yap">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="warning" alignment="CENTER" layoutX="382.0" layoutY="179.0" prefHeight="64.0" prefWidth="474.0" textFill="#ff4949">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="274.0" layoutX="945.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_beige.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="951.0" layoutY="615.0" prefHeight="58.0" prefWidth="262.0" text="Giriş Ekranına Dön" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="951.0" layoutY="609.0" mnemonicParsing="false" onAction="#login" opacity="0.0" prefHeight="64.0" prefWidth="262.0" text="Geri dön" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="startImg" fitHeight="71.0" fitWidth="274.0" layoutX="488.0" layoutY="593.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
+         <image>
+            <Image url="@../images/PNG/buttonLong_beige.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="startLbl" alignment="CENTER" layoutX="494.0" layoutY="592.0" opacity="0.0" prefHeight="71.0" prefWidth="262.0" text="Oyuna Başla!" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="startBtn" alignment="CENTER" disable="true" layoutX="494.0" layoutY="590.0" mnemonicParsing="false" onAction="#charSelect" opacity="0.0" prefHeight="71.0" prefWidth="262.0" text="Oyuna başla" textFill="WHITE" />
+   </children>
+</AnchorPane>

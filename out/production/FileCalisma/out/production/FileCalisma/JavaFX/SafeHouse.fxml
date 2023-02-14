@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1a001b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.SafeHouseController">
+   <children>
+      <ImageView fitHeight="769.0" fitWidth="732.0" layoutX="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/House.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="158.0" layoutX="83.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" scaleX="3.0" scaleY="0.8">
+         <image>
+            <Image url="@../images/PNG/panel_brown.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="character" fitHeight="124.0" fitWidth="96.0" layoutX="505.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="22.0" prefHeight="49.0" prefWidth="205.0" text="EV" textAlignment="CENTER" textFill="#f4f4f4">
+         <font>
+            <Font name="Rockwell" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="btnMsg" layoutX="452.0" layoutY="171.0" prefHeight="41.0" prefWidth="215.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="bed" arcHeight="5.0" arcWidth="5.0" fill="#ffe100" height="41.0" layoutX="397.0" layoutY="256.0" onMouseEntered="#onHover" onMouseExited="#exitHover" opacity="0.15" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="138.0" />
+      <Button fx:id="restBtn" layoutX="397.0" layoutY="256.0" mnemonicParsing="false" onAction="#rest" onMouseEntered="#onHover" onMouseExited="#exitHover" opacity="0.01" prefHeight="41.0" prefWidth="138.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="saveMsg" layoutX="42.0" layoutY="559.0" prefHeight="55.0" prefWidth="215.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1036.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1076.0" layoutY="631.0" text="Evden Çık" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitBtn" layoutX="1036.0" layoutY="619.0" mnemonicParsing="false" onAction="#exit" opacity="0.0" prefHeight="50.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

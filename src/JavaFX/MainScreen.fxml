@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1274.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.MainScreenController">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="147.0" pickOnBounds="true" preserveRatio="true" scaleX="1.4">
+         <image>
+            <Image url="@../images/Mapbackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="114.0" layoutX="412.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="974.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="789.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="232.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="136.0" layoutX="684.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="195.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_beige.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="688.0" layoutY="267.0" prefHeight="17.0" prefWidth="117.0" text="Dükkan" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="19.0" prefHeight="35.0" prefWidth="190.0" text="Hesap Ayarları" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="411.0" layoutY="390.0" prefHeight="17.0" prefWidth="117.0" text="Ev" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="981.0" layoutY="46.0" prefHeight="35.0" prefWidth="190.0" text="Mağara" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="793.0" layoutY="601.0" prefHeight="35.0" prefWidth="190.0" text="Goblin kampı" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="603.0" prefHeight="35.0" prefWidth="190.0" text="Gizemli Orman" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Button accessibleText="bok" layoutX="33.0" layoutY="18.0" mnemonicParsing="false" onAction="#accountSettings" opacity="0.0" prefHeight="35.0" prefWidth="183.0" text="Hesap ayarları">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="685.0" layoutY="261.0" mnemonicParsing="false" onAction="#toolShop" opacity="0.0" prefHeight="26.0" prefWidth="126.0" text="Dükkan">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="977.0" layoutY="43.0" mnemonicParsing="false" onAction="#Cave" opacity="0.0" prefHeight="35.0" prefWidth="196.0" text="Mağara">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="793.0" layoutY="594.0" mnemonicParsing="false" onAction="#GoblinCamp" opacity="0.0" prefHeight="50.0" prefWidth="198.0" text="Goblin kampı">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="409.0" layoutY="383.0" mnemonicParsing="false" onAction="#safeHouse" opacity="0.0" prefHeight="26.0" prefWidth="119.0" text="Ev">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="231.0" layoutY="592.0" mnemonicParsing="false" onAction="#forest" opacity="0.0" prefHeight="55.0" prefWidth="206.0" text="Gizemli Orman">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="205.0" fitWidth="258.0" layoutX="70.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" scaleX="1.3" scaleY="1.5">
+         <image>
+            <Image url="@../images/PNG/panelInset_brown.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="220.0" prefHeight="22.0" prefWidth="47.0" text="İsim:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="245.0" prefHeight="22.0" prefWidth="47.0" text="Para:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="295.0" prefHeight="22.0" prefWidth="47.0" text="Silah:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName" layoutX="170.0" layoutY="219.0" prefHeight="22.0" prefWidth="94.0" text="Kullanıcı adı" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="345.0" prefHeight="22.0" prefWidth="103.0" text="Toplam Hasar:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="445.0" prefHeight="22.0" prefWidth="94.0" text="Toplam Can:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="470.0" prefHeight="22.0" prefWidth="78.0" text="İksir:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="320.0" prefHeight="22.0" prefWidth="80.0" text="Silah Hasarı:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="270.0" prefHeight="22.0" prefWidth="102.0" text="Karakter Hasarı:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="370.0" prefHeight="22.0" prefWidth="102.0" text="Karakter Canı:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="420.0" prefHeight="22.0" prefWidth="87.0" text="Zırh Canı:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName1" layoutX="170.0" layoutY="470.0" prefHeight="22.0" prefWidth="94.0" text="Kullanıcı iksir" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName2" layoutX="170.0" layoutY="445.0" prefHeight="22.0" prefWidth="110.0" text="Kullanıcı top can" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName3" layoutX="170.0" layoutY="420.0" prefHeight="22.0" prefWidth="119.0" text="Kullanıcı Zırh can" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName4" layoutX="170.0" layoutY="370.0" prefHeight="22.0" prefWidth="108.0" text="Kullanıcı can" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName5" layoutX="170.0" layoutY="345.0" prefHeight="22.0" prefWidth="118.0" text="Kullanıcı top dmg" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName6" layoutX="170.0" layoutY="320.0" prefHeight="22.0" prefWidth="126.0" text="Kullanıcı silah dmg" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName7" layoutX="170.0" layoutY="295.0" prefHeight="22.0" prefWidth="94.0" text="Kullanıcı silah" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName8" layoutX="170.0" layoutY="270.0" prefHeight="22.0" prefWidth="94.0" text="Kullanıcı hasar" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName9" layoutX="170.0" layoutY="245.0" prefHeight="22.0" prefWidth="94.0" text="Kullanıcı Para" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="395.0" prefHeight="22.0" prefWidth="103.0" text="Zırh:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="charName10" layoutX="170.0" layoutY="395.0" prefHeight="22.0" prefWidth="103.0" text="Kullanıcı zırh" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="showInfoImg" fitHeight="35.0" fitWidth="161.0" layoutX="70.0" layoutY="103.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_beige.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="removeImg" fitHeight="35.0" fitWidth="137.0" layoutX="70.0" layoutY="65.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_beige.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="removeLbl" alignment="CENTER" layoutX="66.0" layoutY="65.0" opacity="0.0" prefHeight="35.0" prefWidth="142.0" text="Hesabı Sil" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showInfoLbl" alignment="CENTER" layoutX="74.0" layoutY="104.0" opacity="0.0" prefHeight="32.0" prefWidth="126.0" text="Hesap Bilgileri" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="showInfoBtn" disable="true" layoutX="68.0" layoutY="102.0" mnemonicParsing="false" onMouseEntered="#showInfo" onMouseExited="#disableInfo" opacity="0.0" prefHeight="32.0" prefWidth="136.0" text="hesap bilgileri">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="removeBtn" disable="true" layoutX="70.0" layoutY="65.0" mnemonicParsing="false" onAction="#removeAccount" opacity="0.0" prefHeight="32.0" prefWidth="136.0" text="hesap sil">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="showInfoPnlImg" fitHeight="195.0" fitWidth="206.0" layoutX="372.0" layoutY="87.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="0.6">
+         <image>
+            <Image url="@../images/PNG/panelInset_brown.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userNameLbl" layoutX="363.0" layoutY="130.0" opacity="0.0" prefHeight="35.0" prefWidth="87.0" text="Kullanıcı adı:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLbl" layoutX="363.0" layoutY="184.0" opacity="0.0" prefHeight="35.0" prefWidth="47.0" text="Şifre:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userName" layoutX="458.0" layoutY="132.0" prefHeight="32.0" prefWidth="118.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="password" layoutX="462.0" layoutY="183.0" prefHeight="32.0" prefWidth="118.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="195.0" layoutX="241.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PNG/buttonLong_beige.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="18.0" prefHeight="35.0" prefWidth="190.0" text="Çıkış Yap" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Button accessibleText="bok" layoutX="240.0" layoutY="20.0" mnemonicParsing="false" onAction="#exit" opacity="0.0" prefHeight="35.0" prefWidth="183.0" text="Hesap ayarları">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

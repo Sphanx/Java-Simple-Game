@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #11202b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ToolShopController">
+   <children>
+      <ImageView fitHeight="666.0" fitWidth="666.0" layoutX="310.0">
+         <image>
+            <Image url="@../images/Shop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="148.0" layoutX="726.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="2.0">
+         <image>
+            <Image url="@../images/PNG/panelInset_beigeLight.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.53" specularConstant="0.37">
+               <bumpInput>
+                  <Shadow height="0.0" radius="0.6699999999999999" width="4.68" />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.1814035028219223" green="0.36940351128578186" blue="0.49473685026168823" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="sword" fitHeight="98.0" fitWidth="43.0" layoutX="779.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weapons/Sword.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heavyArmor" fitHeight="119.0" fitWidth="43.0" layoutX="726.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weapons/heavy_armor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="knife" fitHeight="48.0" fitWidth="34.0" layoutX="784.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weapons/Knife.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lightArmor" fitHeight="123.0" fitWidth="43.0" layoutX="839.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weapons/light_armor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ghealing" fitHeight="115.0" fitWidth="34.0" layoutX="843.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weapons/GranHealing_potion.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="healing" fitHeight="64.0" fitWidth="21.0" layoutX="790.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weapons/healing_potion.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bow" fitHeight="52.0" fitWidth="43.0" layoutX="726.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weapons/Arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="character" fitHeight="162.0" fitWidth="104.0" layoutX="560.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn1" layoutX="723.0" layoutY="213.0" mnemonicParsing="false" onAction="#printBow" opacity="0.0" prefHeight="42.0" prefWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn4" layoutX="725.0" layoutY="311.0" mnemonicParsing="false" onAction="#printHArmor" opacity="0.0" prefHeight="42.0" prefWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn2" layoutX="782.0" layoutY="213.0" mnemonicParsing="false" onAction="#printPotion" opacity="0.0" prefHeight="42.0" prefWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn3" layoutX="842.0" layoutY="213.0" mnemonicParsing="false" onAction="#printGPotion" opacity="0.0" prefHeight="42.0" prefWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn5" layoutX="782.0" layoutY="312.0" mnemonicParsing="false" onAction="#printKnife" opacity="0.0" prefHeight="42.0" prefWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn6" layoutX="838.0" layoutY="312.0" mnemonicParsing="false" onAction="#printLArmor" opacity="0.0" prefHeight="42.0" prefWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btn7" layoutX="778.0" layoutY="408.0" mnemonicParsing="false" onAction="#printSword" opacity="0.0" prefHeight="42.0" prefWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="150.0" fitWidth="148.0" layoutX="104.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="3.0">
+         <image>
+            <Image url="@../images/PNG/panelInset_beigeLight.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.53" specularConstant="0.37">
+               <bumpInput>
+                  <Shadow height="2.34" radius="1.255" width="4.68" />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.18039216101169586" green="0.3686274588108063" blue="0.4941176474094391" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label fx:id="wpInfo" layoutX="50.0" layoutY="193.0" prefHeight="39.0" prefWidth="253.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="wpName" layoutX="50.0" layoutY="139.0" prefHeight="39.0" prefWidth="230.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="wpPrice" layoutX="50.0" layoutY="255.0" prefHeight="39.0" prefWidth="221.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="210.0" layoutX="77.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.1">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="1.25" specularExponent="8.26" surfaceScale="2.05">
+               <bumpInput>
+                  <Shadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.18039216101169586" green="0.3686274588108063" blue="0.4941176474094391" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="61.0" layoutY="579.0" prefHeight="57.0" prefWidth="242.0" text="Satın Al" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="210.0" layoutX="1018.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.1">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="1.25" specularExponent="8.26" surfaceScale="2.05">
+               <bumpInput>
+                  <Shadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.18039216101169586" green="0.3686274588108063" blue="0.4941176474094391" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="1020.0" layoutY="582.0" prefHeight="57.0" prefWidth="202.0" text="Çıkış Yap" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="1001.0" layoutY="582.0" mnemonicParsing="false" onAction="#exit" opacity="0.0" prefHeight="51.0" prefWidth="235.0" text="ExitBtn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buyBowBtn" disable="true" layoutX="63.0" layoutY="582.0" mnemonicParsing="false" onAction="#buyBow" opacity="0.0" prefHeight="48.0" prefWidth="229.0" text="BuyBow">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buySwordBtn" disable="true" layoutX="62.0" layoutY="582.0" mnemonicParsing="false" onAction="#buySword" opacity="0.0" prefHeight="48.0" prefWidth="229.0" text="BuySword">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buyHPBtn" disable="true" layoutX="63.0" layoutY="582.0" mnemonicParsing="false" onAction="#buyHP" opacity="0.0" prefHeight="48.0" prefWidth="229.0" text="BuyHP">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buyGHPBtn" disable="true" layoutX="62.0" layoutY="582.0" mnemonicParsing="false" onAction="#buyGHP" opacity="0.0" prefHeight="48.0" prefWidth="229.0" text="BuyGhp">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buyHArmorBtn" disable="true" layoutX="63.0" layoutY="582.0" mnemonicParsing="false" onAction="#buyHArmor" opacity="0.0" prefHeight="48.0" prefWidth="229.0" text="BuyHArmor">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buyKnifeBtn" disable="true" layoutX="63.0" layoutY="582.0" mnemonicParsing="false" onAction="#buyKnife" opacity="0.0" prefHeight="48.0" prefWidth="229.0" text="BuyKnife">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buyLArmorBtn" disable="true" layoutX="62.0" layoutY="582.0" mnemonicParsing="false" onAction="#buyLArmor" opacity="0.0" prefHeight="48.0" prefWidth="229.0" text="BuyLArmor">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="warning" alignment="CENTER" layoutX="51.0" layoutY="438.0" prefHeight="101.0" prefWidth="254.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="288.0" layoutX="945.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="0.8">
+         <image>
+            <Image url="@../images/PNG/buttonLong_brown.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="currentBalance" layoutX="934.0" layoutY="31.0" prefHeight="50.0" prefWidth="296.0" text="Paran:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

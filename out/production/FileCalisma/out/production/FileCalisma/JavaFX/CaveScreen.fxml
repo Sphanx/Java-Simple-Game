@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.CaveScreenController">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1280.0">
+            <image>
+                <Image url="@../images/Forest/game_background_3/layers/battleground.png" />
+            </image>
+         <effect>
+            <Lighting specularConstant="0.0" specularExponent="31.01">
+               <bumpInput>
+                  <Shadow blurType="GAUSSIAN" radius="4.75" width="0.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+        </ImageView>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutY="-350.0" pickOnBounds="true" preserveRatio="true" scaleY="2.0">
+         <image>
+            <Image url="@../images/Forest/game_background_3/layers/front_decor.png" />
+         </image>
+      </ImageView>
+        <ImageView fx:id="character" fitHeight="122.0" fitWidth="126.0" layoutX="93.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/CharSprites/Knight/Knight_Stand.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="enemyImg" fitHeight="106.0" fitWidth="155.0" layoutX="1030.0" layoutY="333.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/MonsterSprites/Skeleton/SkeletonIdle.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5">
+            <image>
+                <Image url="@../images/PNG/panel_brown.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1065.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5">
+            <image>
+                <Image url="@../images/PNG/panel_brown.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="220.0" layoutX="235.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/PNG/buttonLong_brown.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="220.0" layoutX="535.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/PNG/buttonLong_brown.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="220.0" layoutX="835.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/PNG/buttonLong_brown.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="hpLbl" layoutX="55.0" layoutY="40.0" prefHeight="43.0" prefWidth="125.0" text="Can:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="26.0" />
+            </font>
+        </Label>
+        <Label fx:id="dmgLbl" layoutX="55.0" layoutY="80.0" prefHeight="43.0" prefWidth="205.0" text="Hasar zarı:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="26.0" />
+            </font>
+        </Label>
+        <Label fx:id="coinLbl" layoutX="55.0" layoutY="120.0" prefHeight="43.0" prefWidth="125.0" text="Para:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="26.0" />
+            </font>
+        </Label>
+        <Label fx:id="hpLbl1" layoutX="1044.0" layoutY="47.0" prefHeight="43.0" prefWidth="125.0" text="Can:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="26.0" />
+            </font>
+        </Label>
+        <Label fx:id="dmgLbl1" layoutX="1044.0" layoutY="87.0" prefHeight="43.0" prefWidth="206.0" text="Hasar:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="26.0" />
+            </font>
+        </Label>
+        <Label fx:id="coinLbl1" layoutX="1044.0" layoutY="127.0" prefHeight="43.0" prefWidth="125.0" text="Para:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="26.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="235.0" layoutY="566.0" prefHeight="43.0" prefWidth="213.0" text="Saldır" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="34.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="535.0" layoutY="565.0" prefHeight="43.0" prefWidth="210.0" text="İksir İç" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="34.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="835.0" layoutY="566.0" prefHeight="43.0" prefWidth="213.0" text="Kaç" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="34.0" />
+            </font>
+        </Label>
+        <Button fx:id="attackBtn" layoutX="235.0" layoutY="559.0" mnemonicParsing="false" onAction="#Battle" opacity="0.0" prefHeight="57.0" prefWidth="216.0" text="Saldır">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="hpBtn" layoutX="535.0" layoutY="554.0" mnemonicParsing="false" onAction="#drinkPotion" opacity="0.0" prefHeight="57.0" prefWidth="216.0" text="İksir">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="runBtn" layoutX="835.0" layoutY="558.0" mnemonicParsing="false" onAction="#run" opacity="0.0" prefHeight="57.0" prefWidth="216.0" text="Kaç">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="warning" alignment="CENTER" layoutX="529.0" layoutY="484.0" prefHeight="55.0" prefWidth="266.0" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="endLbl" alignment="CENTER" layoutX="490.0" layoutY="261.0" prefHeight="75.0" prefWidth="310.0" textFill="WHITE">
+            <font>
+                <Font name="Rockwell Bold" size="51.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="endImg" fitHeight="60.0" fitWidth="220.0" layoutX="648.0" layoutY="380.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/PNG/buttonLong_brown.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="leaveImg" fitHeight="60.0" fitWidth="220.0" layoutX="377.0" layoutY="380.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/PNG/buttonLong_brown.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="continueLbl" alignment="CENTER" layoutX="649.0" layoutY="387.0" prefHeight="43.0" prefWidth="214.0" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="34.0" />
+            </font>
+        </Label>
+        <Label fx:id="leaveLbl" alignment="CENTER" layoutX="377.0" layoutY="377.0" prefHeight="65.0" prefWidth="222.0" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="34.0" />
+            </font>
+        </Label>
+        <Button fx:id="winBtn" disable="true" layoutX="645.0" layoutY="380.0" mnemonicParsing="false" onAction="#battleContinue" opacity="0.0" prefHeight="56.0" prefWidth="224.0" text="winBtn">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="loseBtn" disable="true" layoutX="376.0" layoutY="380.0" mnemonicParsing="false" onAction="#battleLeave" opacity="0.0" prefHeight="56.0" prefWidth="224.0" text="loseBtn">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="warning2" alignment="CENTER" layoutX="333.0" layoutY="465.0" prefHeight="56.0" prefWidth="600.0" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="26.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="playerDiceImg" fitHeight="150.0" fitWidth="200.0" layoutX="276.0" layoutY="37.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dice/Dice1.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.36" specularConstant="0.0" specularExponent="40.0" surfaceScale="7.1">
+               <bumpInput>
+                  <Shadow height="0.0" radius="63.25" width="255.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="enemyDiceImg" fitHeight="150.0" fitWidth="200.0" layoutX="876.0" layoutY="38.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dice/Dice1.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.36" specularConstant="0.0" specularExponent="40.0" surfaceScale="7.1">
+               <bumpInput>
+                  <Shadow height="0.0" radius="63.25" width="255.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label fx:id="playerDice" alignment="CENTER" layoutX="316.0" layoutY="78.0" prefHeight="43.0" prefWidth="49.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="enemyDice" alignment="CENTER" layoutX="918.0" layoutY="78.0" prefHeight="43.0" prefWidth="49.0" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Bold" size="34.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

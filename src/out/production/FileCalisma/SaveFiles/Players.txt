@@ -1,0 +1,6 @@
+Ouzhanco|asdew|Mehmed|450|Knight|1|14|Kılıç|8|9|Ağır Zırh|12|26|Büyük can iksiri|8
+Sphanx|3132|TheCat|27|Samurai|2|12|Yay|5|7|Gündelik kıyafet|5|17|İksir Yok|0
+Ahmedo|kkadayolma|nasus|5|Knight|4|15|Yumruk|0|4|Gündelik kıyafet|5|20|İksir Yok|0
+Samedo|memadi|baş|0|null|0|0|Yumruk|0|0|Gündelik kıyafet|5|5|İksir Yok|0
+ozlemztrkk|bulamazsin|cadenza|20|Ranger|1|14|Yumruk|0|1|Gündelik kıyafet|5|19|İksir Yok|0
+sefiri|1234|efegds|20|Ranger|1|14|Yumruk|0|1|Gündelik kıyafet|5|19|İksir Yok|0
